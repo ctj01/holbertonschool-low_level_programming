@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-int n = rand();
+int n = rand()- RAND_MAX / 2;
 if (n == 0)
 {
 printf("0 is zero/n");
