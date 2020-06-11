@@ -2,14 +2,12 @@
 #include <string.h>
 /**
 * main - Entry point
-* argc (Argument count) Length of the argument vector
-* argv (Argument vector)Array of character pointers
+*
 * Return: Always 0 (Success)
 */
-int main(int argc, char *argv[])
+int main(void)
 {
-char string[80];
-strcpy(string, "Programming is like building a multilingual puzzle");
-puts(string);
-return (0);
+puts("\"Programming is like building a multilingual puzzle");
+
+	return (0);
 }
