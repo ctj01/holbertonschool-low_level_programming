@@ -8,12 +8,16 @@
 */
 int main(void)
 {
-int i;
-for (i = 0; i <= 9 ; i++)
+int i = 0;
+while (i < 10)
 {
 putchar(i % 10 + '0');
+i++;
+if (i < 10)
+{
 putchar(',');
-putchar(' '); 
+putchar(' ');
+}
 }
 putchar('\n');
 return (0);
