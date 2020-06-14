@@ -15,7 +15,7 @@ while (d < 10)
 {
 while (j < 10)
 {
-if (j != i && d != i && d != j && i != j  && j > i && d < j && i < d)
+if (d != i && i != j && j > i && d < j && i < d)
 {
 putchar(i + '0');
 putchar(d + '0');
