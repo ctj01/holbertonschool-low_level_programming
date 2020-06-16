@@ -1,22 +1,9 @@
 #include <unistd.h>
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+#include <stdio.h>
 int _putchar(int c)
 {
-	return (write(1, &c, 1));
+return (write(1, &c, 1));
 }
-/**
- *print_alphabet - uses the print_alphabet func
- *
- *Return: nothing
- */
-
 void print_alphabet(void)
 {int i;
 for (i = 'a'; i <= 'z'; i++)
