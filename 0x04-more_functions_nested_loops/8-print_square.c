@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * print_diagonal - check the code for Holberton School students.
- *@n: is a parameter
+ *print_square - check the code for Holberton School students.
+ *@size: is a parameter
  * Return: Always 0.
  */
 
