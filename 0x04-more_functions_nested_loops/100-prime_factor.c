@@ -11,7 +11,6 @@ int main(void)
 	long int i;
 	long int N = 612852475143;
 	long int longnumber;
-	long int aux;
 
 for (i = 2; i < N; i += 3)
 {
@@ -21,7 +20,7 @@ if (N % i == 0)
 {
 if (i > longnumber && longnumber != 0)
 {
-printf("%i\n", i);
+printf("%ld\n", i);
 break;
 }
 longnumber = i;
