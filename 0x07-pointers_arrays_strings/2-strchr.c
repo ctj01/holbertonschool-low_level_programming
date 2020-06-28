@@ -22,9 +22,13 @@ char *_strchr(char *s, char c)
 
 	}
 
-	if (status)
+	if (status == 1)
 	{
-		return (NULL);
+		return (s + i);
+	}
+	else
+	{
+		return (0);
 	}
 
 }
