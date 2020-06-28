@@ -24,10 +24,10 @@ char *_strchr(char *s, char c)
 	}
 
 	if (status == 1)
-	{
-		return (s + i);
-	}
 
-	return (NULL);
+		return (s + i);
+
+
+	return (0);
 
 }
