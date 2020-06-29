@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  *_strstr - check the code for Holberton School students.
  *@haystack : is a parameter
@@ -9,7 +10,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-
+	char *d;
 
 	while (*needle != '\0')
 	{
@@ -18,18 +19,23 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (*haystack == *needle)
 			{
-				break;
+				d = haystack;
 
 			}
 			haystack++;
 		}
 		if (*needle)
 		{
-			return (haystack);
+			return (d);
+		}
+		else
+		{
+			return (NULL);
 		}
 
-			needle++;
-	}
+		needle++;
 
-	return (0);
+	}
+	return (NULL);
+
 }
