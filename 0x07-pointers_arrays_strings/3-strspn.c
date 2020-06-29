@@ -8,9 +8,9 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
-	int d = 0;
-	int aux = 0;
+	unsigned int i = 0;
+	unsigned int d = 0;
+	unsigned int aux = 0;
 	unsigned int x = 0;
 
 	while (accept[i] != '\0')
@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[i] == s[d] && accept[i] != '\0' && s[d] != '\0')
 			{
-				x = x + 1;
+				x++;
 			}
 
 		}
