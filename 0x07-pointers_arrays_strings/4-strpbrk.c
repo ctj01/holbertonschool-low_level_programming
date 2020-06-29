@@ -18,18 +18,18 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[d] == s[i])
 			{
+				break;
 
-				return (s + i);
 			}
 
+		}
+		if (accept[d])
+		{
+			return (s + i);
 		}
 
 
 	}
-	if (accept[d] == s[i])
-	{
 
-		return (s + i);
-	}
 	return (0);
 }
