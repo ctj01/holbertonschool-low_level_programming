@@ -22,8 +22,7 @@ char *_strstr(char *haystack, char *needle)
 				d = haystack;
 
 			}
-			else
-				break;
+
 			haystack++;
 		}
 		if (d != NULL)
