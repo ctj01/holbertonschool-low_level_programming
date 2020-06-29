@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	aux = i;
 	i = 0;
-	for (i; i <= aux; i++)
+	for (; i <= aux; i++)
 	{
 		for (d = 0; d <= aux; d++)
 		{
