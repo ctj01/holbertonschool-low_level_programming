@@ -22,14 +22,14 @@ int main(int argc, char *argv[])
 	{
 		for (d = 0; argv[i][d]; d++)
 		{
-			if (!isdigit(argv[i][d]))
+			if (isalpha(argv[i][d]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 
 		}
-		aux += atoi(argv[d]);
+		aux += atoi(argv[i]);
 	}
 
 	printf("%d\n", aux);
