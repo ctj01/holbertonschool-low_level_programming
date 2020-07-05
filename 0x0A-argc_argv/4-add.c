@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; ++i)
 	{
-		for (d = 0; argv[i][d]; d++)
+		for (d = 0; argv[i][d] != 00; d++)
 		{
 			if (isalpha(argv[i][d]))
 			{
