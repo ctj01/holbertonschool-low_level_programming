@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int d = 0;
 
-	if (argc == 0)
+	if (argc == 1)
 	{
 		printf("0\n");
 	}
 	for (i = 1; i < argc; ++i)
 	{
-		for (d = 0; argv[i][d] != 00; d++)
+		for (d = 0; argv[i][d]; d++)
 		{
 			if (isalpha(argv[i][d]))
 			{
