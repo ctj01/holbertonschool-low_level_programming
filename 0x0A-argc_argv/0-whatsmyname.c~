@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ *_puts_recursion - check the code for Holberton School students.
+ *@s : is a parameter
+ * Return: nothing.
+ */
+
+int main(int i, char *argv[])
+{
+	i = 0;
+
+        printf("%s\n",argv[i]);
+	return (0);
+}
