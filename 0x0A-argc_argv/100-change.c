@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 			if ((d % money[i]) == 0)
 			{
 				printf("%d\n", aux);
-				return (aux);
+				return (0);
 			}
 			else
 				d = d % money[i];
