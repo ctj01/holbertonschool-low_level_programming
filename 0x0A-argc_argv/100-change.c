@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			aux += d / money[i];
 			if ((d % money[i]) == 0)
 			{
-				printf("%i\n", aux);
+				printf("%d\n", aux);
 				return (aux);
 			}
 			else
