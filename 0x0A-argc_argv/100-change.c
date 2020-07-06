@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	d = atoi(argv[1]);
-	if (d < 0)
+	if (d <= 0)
 		printf("0\n");
 	for (i = 0; i < 5; ++i)
 	{
