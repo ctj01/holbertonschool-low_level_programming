@@ -29,9 +29,8 @@ int _strlen_recursion(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, int d = 0, int z = 0, int p = 0;
+	int i = 0, d = 0, z = 0, p = 0;
 	char *st = NULL;
-	char *st2 = NULL;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -44,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 	st = (char *)malloc(d + i);
 	if (st != NULL)
 	{
-		st2 = st;
 		z = 0;
 		for (z = 0; z <  d; z++)
 		{
