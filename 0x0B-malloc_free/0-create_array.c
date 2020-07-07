@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 /**
  *create_array - check the code for Holberton School students.
  *@c : is a parameter
