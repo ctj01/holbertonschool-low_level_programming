@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 	d = _strlen_recursion(s1);
 	i = _strlen_recursion(s2);
 
-	st = (char *)malloc(d + i);
+	st = (char *)malloc((d + i) + 1);
 	if (st != NULL)
 	{
 		z = 0;
