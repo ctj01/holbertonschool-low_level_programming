@@ -1,1 +1,3 @@
-**MALLOC**
+**The name "malloc" stands for memory allocation.**
+
+**The malloc() function reserves a block of memory of the specified number of bytes. And, it returns a pointer of void which can be casted into pointers of any form.**
