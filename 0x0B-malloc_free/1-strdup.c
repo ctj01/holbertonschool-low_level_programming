@@ -36,15 +36,12 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else
+	i = _strlen_recursion(str);
+	dup = (char *)malloc(i + 1);
+	for (d = 0; d < i; d++)
 	{
-		i = _strlen_recursion(str);
-		dup = (char *)malloc(i + 1);
-		for (d = 0; str[d] != '\0'; d++)
-		{
-			dup[d] = str[d];
-		}
-		return (dup);
+		dup[d] = str[d];
 	}
-	free(dup);
+	return (dup);
+
 }
