@@ -34,7 +34,7 @@ char *_strdup(char *str)
 
 	i = _strlen_recursion(str);
 	dup = (char *)malloc(i);
-	if (dup)
+	if (dup != NULL)
 	{
 		for (d = 0; d < i; d++)
 		{
