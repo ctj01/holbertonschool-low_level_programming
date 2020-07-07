@@ -35,11 +35,12 @@ char *_strdup(char *str)
 	if (str != NULL)
 	{
 		i = _strlen_recursion(str);
-		dup = (char *)malloc(i);
+		dup = (char *)malloc(i + 1);
 		for (d = 0; str[d] != '\0'; d++)
 		{
 			dup[d] = str[d];
 		}
 	}
+	dup[d] = '\0';
 	return (dup);
 }
