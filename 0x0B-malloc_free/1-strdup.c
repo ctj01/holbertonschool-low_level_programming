@@ -32,10 +32,10 @@ char *_strdup(char *str)
 	int d = 0;
 	char *dup = NULL;
 
-	i = _strlen_recursion(str);
-	dup = (char *)malloc(i + 1);
-	if (dup)
+	if (str != NULL)
 	{
+		i = _strlen_recursion(str);
+		dup = (char *)malloc(i + 1);
 		for (d = 0; d < i; d++)
 		{
 			dup[d] = str[d];
