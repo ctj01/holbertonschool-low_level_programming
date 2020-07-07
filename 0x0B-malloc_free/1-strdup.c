@@ -38,14 +38,13 @@ char *_strdup(char *str)
 	}
 	i = _strlen_recursion(str);
 	dup = (char *)malloc(i + 1);
-	if(dup != NULL)
+	if (dup != NULL)
 	{
 		for (d = 0; d < i; d++)
 		{
 			dup[d] = str[d];
 		}
 	}
-	dup[d] = '\0';
 	return (dup);
 
 }
