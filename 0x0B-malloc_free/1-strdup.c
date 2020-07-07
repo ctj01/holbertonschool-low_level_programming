@@ -33,7 +33,7 @@ char *_strdup(char *str)
 	char *dup = NULL;
 
 	i = _strlen_recursion(str);
-	dup = (char *)malloc(i);
+	dup = (char *)malloc(i + 1);
 	if (dup)
 	{
 		for (d = 0; d < i; d++)
@@ -41,6 +41,7 @@ char *_strdup(char *str)
 			dup[d] = str[d];
 		}
 	}
+	dup[d] = '\0';
 
 	return (dup);
 }
