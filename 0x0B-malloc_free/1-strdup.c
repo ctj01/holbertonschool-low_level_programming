@@ -36,7 +36,6 @@ char *_strdup(char *str)
 	dup = (char *)malloc(i);
 	if (dup)
 	{
-		i = i -1;
 		for (d = 0; d < i; d++)
 		{
 			dup[d] = str[d];
