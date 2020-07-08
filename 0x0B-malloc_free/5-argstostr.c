@@ -47,7 +47,7 @@ char *argstostr(int ac, char **av)
 		d = 0;
 		for (z = 0; z < ac; z++)
 		{
-			for (j = 0; av[z][j]; j++)
+			for (j = 0; av[z][j] ! = '\0'; j++)
 			{
 				p[d] = av[z][j];
 				d++;
