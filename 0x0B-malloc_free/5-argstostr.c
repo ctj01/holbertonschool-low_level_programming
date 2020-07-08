@@ -57,13 +57,12 @@ char *argstostr(int ac, char **av)
 			d++;
 
 		}
+		p[d] = '\0';
 
 	}
 	else
 	{
 		free(p);
 	}
-	p[d] = '\0';
 	return (p);
-
 }
