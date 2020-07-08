@@ -32,6 +32,7 @@ int **alloc_grid(int width, int height)
 	{
 		for (d = 0; d < width; d++)
 		{
+			matriz[i][d] = 0;
 		}
 	}
 
