@@ -35,7 +35,6 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 	{
-		free(p);
 		return (p);
 	}
 	for (i = 0; i < ac; i++)
@@ -59,6 +58,10 @@ char *argstostr(int ac, char **av)
 
 		}
 
+	}
+	else
+	{
+		free(p);
 	}
 	p[d] = '\0';
 	return (p);
