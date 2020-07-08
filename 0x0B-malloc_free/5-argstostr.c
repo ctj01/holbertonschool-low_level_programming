@@ -35,16 +35,19 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 	{
-		return (p);
+		return (NULL);
 	}
 	for (i = 0; i < ac; i++)
 	{
 		d += _strlen_recursion(av[i]);
 	}
 	p = (char *)malloc((d + 1));
-	if (p != NULL)
+	if (p == NULL)
 	{
-		d = 0;
+		free(p);
+		return (NULL);
+	}
+	d = 0;
 		for (z = 0; z < ac; z++)
 		{
 			for (j = 0; av[z][j]; j++)
@@ -58,11 +61,5 @@ char *argstostr(int ac, char **av)
 
 		}
 		p[d] = '\0';
-
-	}
-	else
-	{
-		free(p);
-	}
-	return (p);
+		return (p);
 }
