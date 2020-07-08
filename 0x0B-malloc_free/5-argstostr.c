@@ -35,6 +35,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 	{
+		free(p);
 		return (p);
 	}
 	for (i = 0; i < ac; i++)
