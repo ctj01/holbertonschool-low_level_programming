@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 	{
 		d += _strlen_recursion(av[i]);
 	}
-	p = (char *)malloc((d + 1));
+	p = (char *)malloc((d + ac + 1));
 	if (p)
 	{
 		d = 0;
