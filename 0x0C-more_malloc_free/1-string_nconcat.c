@@ -43,11 +43,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n >= d2)
 	{
-		pointer = malloc(sizeof(*pointer) * (d + d2 + 1));
+		pointer = malloc(sizeof((*pointer) * (d + d2 + 1)));
 	}
 	else
 	{
-		pointer = malloc(sizeof(*pointer) * (d + n + 1));
+		pointer = malloc(sizeof((*pointer) * (d + n + 1)));
 	}
 
 	if (pointer)
