@@ -18,10 +18,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (pointer);
 
 	}
+	d = (size *nmemb);
 	pointer = malloc(d);
-	if (!pointer)
+	if (pointer)
 	{
-		d = (size * nmemb);
 		for (i = 0; i < d; i++)
 		{
 			((char *)pointer)[i] = 0;
