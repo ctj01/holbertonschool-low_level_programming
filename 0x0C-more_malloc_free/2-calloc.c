@@ -27,10 +27,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 			((char *)pointer)[i] = 0;
 		}
 	}
-	else
-	{
-		free(pointer);
-	}
 
 	return (pointer);
 }
