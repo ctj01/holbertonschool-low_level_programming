@@ -30,7 +30,7 @@ int _strlen_recursion(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int d = 0, d2 = 0, i = 0, z = 0;
+	unsigned int d = 0, d2 = 0, i = 0, z = 0;
 	char *pointer = NULL;
 
 	if (s1 == NULL)
@@ -52,10 +52,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (pointer)
 	{
-		for (i = 0; i < s1[i]; i++)
+		for (i = 0; s1[i]; i++)
 			pointer[i] = s1[i];
 
-		for (z = 0; z < s2[z] && z < n; z++)
+		for (z = 0; s2[z] && z < n; z++)
 			pointer[i++] = s2[z];
 	}
 	pointer[i] = '\0';
