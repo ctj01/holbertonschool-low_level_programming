@@ -43,11 +43,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n >= d2)
 	{
-		pointer = malloc(sizeof((*pointer) * (d + d2 + 1)));
+		pointer = malloc(sizeof(*pointer) * (d + d2 + 1));
 	}
 	else
 	{
-		pointer = malloc(sizeof((*pointer) * (d + n + 1)));
+		pointer = malloc(sizeof(*pointer) * (d + n + 1));
 	}
 
 	if (pointer)
@@ -57,6 +57,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		for (z = 0; s2[z] && z < n; z++)
 			pointer[i++] = s2[z];
+	}
+	else
+	{
+		free(pointer);
+		return (pointer);
 	}
 	pointer[i] = '\0';
 	return (pointer);
