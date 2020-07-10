@@ -28,6 +28,11 @@ int *array_range(int min, int max)
 			pointer[i] = i;
 		}
 	}
+	else
+	{
+		free(p);
+		return (NULL);
+	}
 
 	return (pointer);
 }
