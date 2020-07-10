@@ -30,7 +30,7 @@ int *array_range(int min, int max)
 	}
 	else
 	{
-		free(p);
+		free(pointer);
 		return (NULL);
 	}
 
