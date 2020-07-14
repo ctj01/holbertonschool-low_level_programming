@@ -63,5 +63,5 @@ char *_strcopy(char *s)
 		i++;
 	}
 	p[i] = '\0';
-	return (s);
+	return (p);
 }
