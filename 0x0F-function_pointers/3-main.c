@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int (*cal)(int, int);
-	int a, b, op;
+	int a, b;
 
 	if (argc != 4)
 	{
@@ -26,17 +26,8 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	op = argv[2][0];
-
-	switch (op)
+	if (argv[2][1] != '\0')
 	{
-	case '+':
-	case '-':
-	case '*':
-	case '/':
-	case '%':
-		break;
-	default:
 		printf("Error\n");
 		exit(99);
 	}
