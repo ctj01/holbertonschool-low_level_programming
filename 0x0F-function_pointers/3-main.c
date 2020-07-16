@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int (*cal)(int, int);
-	int a, b;
+	int a, b, r;
 
 	if (argc != 4)
 	{
@@ -35,7 +35,8 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	cal = get_op_func(argv[2]);
-	printf("%d\n", cal(a, b));
+	r = cal(a, b);
+	printf("%d\n", r);
 
 	return (0);
 
