@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include "3-calc.h"
+#include <stdlib.h>
+
+/**
+ * get_op_func - check the code for Holberton School students.
+ *@s : name
+ *
+ * Return: Always 0.
+ */
+
+int (*get_op_func(char *s))(int, int)
+{
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i;
+
+	for (i = 0; i < 6; i++)
+	{
+		if (ops[i].op[0] == s[0])
+			return (ops[i].f);
+	}
+	printf("Error\n");
+	exit(99);
+}
