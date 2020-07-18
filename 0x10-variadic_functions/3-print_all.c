@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <unistd.h>
 #include "variadic_functions.h"
 #include <stdarg.h>
 
 /**
  * printf_float - check the code for Holberton School students.
  *@list : number argument
- * Return: Always 0.
+ * Return: void.
  */
 
 void printf_float(va_list list)
@@ -17,7 +16,7 @@ void printf_float(va_list list)
 /**
  * printf_int - check the code for Holberton School students.
  *@list : number argument
- * Return: Always 0.
+ * Return: void.
  */
 void printf_int(va_list list)
 {
@@ -27,7 +26,7 @@ void printf_int(va_list list)
 /**
  *printfcharacter - check the code for Holberton School students.
  *@list : number argument
- * Return: Always 0.
+ * Return: void.
  */
 
 void printfcharacter(va_list list)
@@ -39,7 +38,7 @@ void printfcharacter(va_list list)
 /**
  *printfchar - check the code for Holberton School students.
  *@list : number argument
- * Return: Always 0.
+ * Return: void.
  */
 
 void printfchar(va_list list)
@@ -55,7 +54,7 @@ void printfchar(va_list list)
 /**
  * print_all - check the code for Holberton School students.
  *@format : placeholderlist
- * Return: Always 0.
+ * Return: void
  */
 
 void print_all(const char * const format, ...)
@@ -82,6 +81,9 @@ void print_all(const char * const format, ...)
 			if (*print[d].c == format[i])
 			{
 				print[d].placeholder(list);
+				if (d - 1)
+					printf(", ");
+
 			}
 			d++;
 		}
