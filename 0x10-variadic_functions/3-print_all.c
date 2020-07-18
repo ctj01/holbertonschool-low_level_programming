@@ -4,7 +4,7 @@
 
 /**
  * printf_float - check the code for Holberton School students.
- *@list : number argument
+ *@f : number argument
  * Return: void.
  */
 
@@ -15,7 +15,7 @@ void printf_float(va_list f)
 }
 /**
  * printf_int - check the code for Holberton School students.
- *@list : number argument
+ *@i : number argument
  * Return: void.
  */
 void printf_int(va_list i)
@@ -25,7 +25,7 @@ void printf_int(va_list i)
 }
 /**
  *printfcharacter - check the code for Holberton School students.
- *@list : number argument
+ *@c : number argument
  * Return: void.
  */
 
@@ -37,7 +37,7 @@ void printfcharacter(va_list c)
 
 /**
  *printfchar - check the code for Holberton School students.
- *@list : number argument
+ *@s : number argument
  * Return: void.
  */
 
