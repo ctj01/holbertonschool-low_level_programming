@@ -86,6 +86,7 @@ void print_all(const char * const format, ...)
 				printf("%s", separator);
 				print[d].placeholder(list);
 				separator = ", ";
+				break;
 
 
 			}
