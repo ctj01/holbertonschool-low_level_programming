@@ -82,9 +82,6 @@ void print_all(const char * const format, ...)
 			if (*print[d].c == format[i])
 			{
 				print[d].placeholder(list);
-				if (d - 1)
-					printf(", ");
-
 			}
 			d++;
 		}
