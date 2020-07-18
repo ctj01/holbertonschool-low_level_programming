@@ -10,7 +10,7 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	int i = 0;
+	unsigned int i;
 	char *string;
 	va_list list;
 
