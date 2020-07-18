@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "variadic_functions.h"
 #include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * printf_float - check the code for Holberton School students.
@@ -8,7 +8,7 @@
  * Return: void.
  */
 
-void printf_float(va_list list)
+void printf_float(va_list f)
 {
 	printf("%f", va_arg(list, double));
 
@@ -18,7 +18,7 @@ void printf_float(va_list list)
  *@list : number argument
  * Return: void.
  */
-void printf_int(va_list list)
+void printf_int(va_list i)
 {
 	printf("%i", va_arg(list, int));
 
@@ -29,7 +29,7 @@ void printf_int(va_list list)
  * Return: void.
  */
 
-void printfcharacter(va_list list)
+void printfcharacter(va_list c)
 {
 	printf("%c", va_arg(list, int));
 
@@ -41,7 +41,7 @@ void printfcharacter(va_list list)
  * Return: void.
  */
 
-void printfchar(va_list list)
+void printfchar(va_list s)
 {
 	char *string = va_arg(list, char *);
 
