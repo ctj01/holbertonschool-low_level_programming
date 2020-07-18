@@ -63,8 +63,6 @@ void print_all(const char * const format, ...)
 	va_list list;
 
 
-	i = 0;
-	d = 0;
 	_printf print[] = {
 		{"c", printfcharacter},
 		{"s", printfchar},
@@ -72,17 +70,23 @@ void print_all(const char * const format, ...)
 		{"f", printf_float},
 		{NULL, NULL}
 	};
+	char *separator = "";
+
 	va_start(list, format);
 
-	while (format && format[i])
+	i = 0;
+	d = 0;
+
+	while (format[i])
 	{
 		while (print[d].c != NULL)
 		{
 			if (*print[d].c == format[i])
 			{
+				printf("%s", separator);
 				print[d].placeholder(list);
-				if (d - 1)
-					printf(", ");
+				separator = ", ";
+
 
 			}
 			d++;
