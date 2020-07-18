@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "variadic_functions.h"
+#include <stdarg.h>
 
 /**
  * printf_float - check the code for Holberton School students.
