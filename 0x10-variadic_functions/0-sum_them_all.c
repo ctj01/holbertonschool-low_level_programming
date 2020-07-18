@@ -3,6 +3,8 @@
 /**
  * sum_them_all - check the code for Holberton School students.
  *@n : number arguments
+ *
+ *Description: variadic functions
  * Return: Always 0.
  */
 
