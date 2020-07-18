@@ -13,7 +13,10 @@ typedef struct _print
 	char *c;
 	void(*placeholder)(va_list);
 }_printf;
-
+void printf_float(va_list list);
+void printf_int(va_list list);
+void printfcharacter(va_list list);
+void printfchar(va_list list);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
