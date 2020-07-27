@@ -1,0 +1,27 @@
+#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * list_len - display elements in list
+ *@h: list
+ *Return: size list
+ */
+
+list_t *add_node(list_t **head, const char *str)
+{
+	list_t *Newnodo;
+	unsigned int i;
+
+	Newnodo = malloc(sizeof(list));
+
+	while (Newnodo)
+		i++;
+	Newnodo->len = i;
+	Newnodo->str = strcopy(str);
+	Newnodo->next = head;
+
+	return (Newnodo);
+
+}
