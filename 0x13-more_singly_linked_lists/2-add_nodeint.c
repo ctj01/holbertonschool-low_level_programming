@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *add_nodeint_end - check the code for Holberton School students.
+ *add_nodeint - check the code for Holberton School students.
  *@head : head of list
  *@n : data
  * Return: Always 0.
