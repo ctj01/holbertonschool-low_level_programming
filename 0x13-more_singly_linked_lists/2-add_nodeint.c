@@ -27,11 +27,8 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (newnodo);
 
 	}
-	while (aux->next)
-	{
-		aux = aux->next;
-	}
-	aux->next = newnodo;
+	newnodo->next = *head;
+	*head = newnodo;
 	return (newnodo);
 
 }
