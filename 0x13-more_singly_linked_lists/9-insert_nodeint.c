@@ -14,7 +14,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *aux = NULL;
 	listint_t *newnodo = NULL;
-	unsigned int posicion = 1;
+	unsigned int posicion = 0;
 
 
 	if (head)
@@ -32,7 +32,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 
 		aux = *head;
-		while (posicion < idx && aux->next)
+		while (posicion < (idx - 1) && aux->next)
 		{
 			posicion++;
 			aux = aux->next;
