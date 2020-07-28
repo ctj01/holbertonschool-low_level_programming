@@ -16,10 +16,9 @@ int pop_listint(listint_t **head)
 	if (head)
 	{
 		nodoeliminado = *head;
-		*head = nodoeliminado->next;
 		n = nodoeliminado->n;
+		*head = nodoeliminado->next;
 		free(nodoeliminado);
-		return (n);
 	}
-	return (0);
+	return (n);
 }
