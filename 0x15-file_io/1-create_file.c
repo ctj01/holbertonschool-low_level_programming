@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *read_textfile - check the code for Holberton School students.
+ *create_file - check the code for Holberton School students.
  *@filename: name of file
  *@text_content : character of file
  * Return: Always 0.
@@ -22,7 +22,6 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		return (1);
 
-	len = 0;
 	while (text_content[i])
 		i++;
 
