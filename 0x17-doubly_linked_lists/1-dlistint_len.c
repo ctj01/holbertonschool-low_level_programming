@@ -12,7 +12,7 @@ size_t dlistint_len(const dlistint_t *h)
 
 	if (node)
 	{
-		return (dlistint_len(h->next));
+		return (1 + dlistint_len(h->next));
 	}
 
 	return (0);
