@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *  print_dlistint - check the code for Holberton School students.
+ *  dlistint_len - check the code for Holberton School students.
  * @h: arguments
  *  Return: Always EXIT_SUCCESS.
  */
