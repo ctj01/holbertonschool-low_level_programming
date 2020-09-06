@@ -18,10 +18,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		return (aux);
 
 	}
-       	if (aux->next)
-	{
-		aux = get_dnodeint_at_index(head->next, index - 1);
-	}
-	return (aux);
+	return (aux = get_dnodeint_at_index(head->next, index - 1));
 
 }
