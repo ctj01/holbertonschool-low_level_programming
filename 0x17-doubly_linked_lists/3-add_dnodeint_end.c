@@ -25,10 +25,11 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		*head = node;
 		return (node);
 	}
-	if (aux->next == NULL)
+	if (aux->next)
 	{
-		node->prev = aux;
+		aux = add_dnodeint_end(&(*head)->next, n);
 	}
-	aux->next = add_dnodeint_end(&(*head)->next, n);
+	aux->next = node;
+	node->prev = aux;
 	return (aux);
 }
