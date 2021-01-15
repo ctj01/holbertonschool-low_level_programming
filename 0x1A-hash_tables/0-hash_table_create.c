@@ -13,7 +13,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!aux)
 	{
 		free(aux);
-		return (NULL);
+		
 	}
 	aux->size = size;
 	aux->array = malloc(size * sizeof(hash_table_t));
