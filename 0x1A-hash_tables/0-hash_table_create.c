@@ -10,10 +10,15 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *aux = NULL;
 
 	aux = malloc(sizeof(hash_table_t));
+	if (!aux)
+	{
+		free(aux);
+		return (NULL);
+	}
 	aux->size = size;
 	aux->array = malloc(size * sizeof(hash_table_t));
 
-	if (!aux)
+	if (!aux->array)
 	{
 		free(aux);
 		return (NULL);
