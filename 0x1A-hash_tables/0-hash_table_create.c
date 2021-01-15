@@ -7,10 +7,12 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *aux = malloc(sizeof(hash_table_t));
+	hash_table_t *aux = NULL;
 
+	aux = malloc(sizeof(hash_table_t));
 	aux->size = size;
 	aux->array = malloc(size * sizeof(hash_table_t));
+
 	if (!aux)
 	{
 		free(aux);
